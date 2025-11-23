@@ -5,12 +5,12 @@ Sistema de gestión de turnos médicos bajo el estándar **FHIR HL7 R4**. Admini
 **Stack:** Next.js 14 · NestJS · TypeScript · PostgreSQL · Docker · Tailwind CSS
 
 ##  Vista General del Proyecto - Capturas de Pantalla
-![Foto 1](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/1.jpg)
-![Foto 2](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/2.jpg)
-![Foto 3](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/3.jpg)
-![Foto 4](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/4.jpg)
-![Foto 5](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/5.jpg)
-![Foto 6](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/6.jpg)
+![Foto 1](https://raw.githubusercontent.com/Martinevillanueva/Turnos-Zentricx/main/frontend/public/images/screens/1.jpg)
+![Foto 2](https://raw.githubusercontent.com/Martinevillanueva/Turnos-Zentricx/main/frontend/public/images/screens/2.jpg)
+![Foto 3](https://raw.githubusercontent.com/Martinevillanueva/Turnos-Zentricx/main/frontend/public/images/screens/3.jpg)
+![Foto 4](https://raw.githubusercontent.com/Martinevillanueva/Turnos-Zentricx/main/frontend/public/images/screens/4.jpg)
+![Foto 5](https://raw.githubusercontent.com/Martinevillanueva/Turnos-Zentricx/main/frontend/public/images/screens/5.jpg)
+![Foto 6](https://raw.githubusercontent.com/Martinevillanueva/Turnos-Zentricx/main/frontend/public/images/screens/6.jpg)
 
 
 ##  Inicio Rápido
