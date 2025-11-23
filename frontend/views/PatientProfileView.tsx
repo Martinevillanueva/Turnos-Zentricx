@@ -144,7 +144,7 @@ export default function PatientProfileView({
 
   return (
 
-    <div className="space-y-6">
+    <div>
       {/* Encabezado azul igual a gestión de pacientes */}
       <div className="bg-blue-600 text-white px-6 py-4 rounded-t-lg">
         <div className="flex items-center justify-between">
@@ -236,7 +236,8 @@ export default function PatientProfileView({
         </div>
       </div>
       {/* Turnos Section */}
-      <div className="bg-white rounded-lg shadow-sm">
+      <br></br>
+      <div className="bg-white rounded-lg shadow-sm space-y-6">
         {/* Encabezado azul con total de turnos */}
         <div className="bg-blue-600 text-white px-6 py-4 rounded-t-lg flex items-center justify-between">
           <h3 className="text-lg font-semibold">Historial de Turnos</h3>
