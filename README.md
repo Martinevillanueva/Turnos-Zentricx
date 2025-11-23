@@ -1,38 +1,19 @@
-# ��� Sistema de Gestión de Turnos Médicos - Challenge Zentricx
+#  Sistema de Gestión de Turnos Médicos - Challenge Zentricx
 
-Sistema de gestión de turnos médicos bajo el estándar **FHIR HL7 R4**. Administra citas, pacientes y médicos con interfaz moderna y base de datos PostgreSQL.
+Sistema de gestión de turnos médicos bajo el estándar **FHIR HL7 R4**. Administra citas, pacientes y médicos con base de datos PostgreSQL.
 
 **Stack:** Next.js 14 · NestJS · TypeScript · PostgreSQL · Docker · Tailwind CSS
 
-## 📸 Capturas de Pantalla
+##  Vista General del Proyecto - Capturas de Pantalla
+![Foto 1](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/1.jpg)
+![Foto 2](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/2.jpg)
+![Foto 3](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/3.jpg)
+![Foto 4](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/4.jpg)
+![Foto 5](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/5.jpg)
+![Foto 6](https://github.com/Martinevillanueva/Turnos-Zentricx/blob/main/frontend/public/images/screens/6.jpg)
 
-<div align="center">
 
-### 📅 Calendario de Turnos
-![Calendario de Turnos](./screenshots/calendario.png)
-*Vista del calendario interactivo con turnos por médico y filtros avanzados*
-
-### 👥 Gestión de Pacientes  
-![Lista de Pacientes](./screenshots/pacientes.png)
-*Lista de pacientes con búsqueda y acciones rápidas*
-
-### 📋 Perfil del Paciente
-![Perfil de Paciente](./screenshots/perfil.png)
-*Perfil completo con historial de turnos y datos demográficos*
-
-### 📝 Formulario de Turno
-![Crear Turno](./screenshots/crear-turno.png)
-*Formulario simplificado para creación rápida de turnos*
-
-### 📖 Documentación API
-![Swagger API](./screenshots/swagger.png)
-*Documentación interactiva Swagger con todos los endpoints FHIR*
-
-</div>
-
-> 💡 **Para agregar tus imágenes:** Crea la carpeta `screenshots` en la raíz del proyecto y agrega tus capturas allí, o edita en GitHub y arrastra las imágenes directamente
-
-## 🚀 Inicio Rápido
+##  Inicio Rápido
 
 ```bash
 # Con Docker (recomendado)
@@ -44,8 +25,7 @@ npm run setup && npm run dev:all
 
 **URLs:**
 - Frontend: http://localhost:3000
-- Backend API: http://localhost:4000/api/docs
-- PgAdmin: http://localhost:5050
+- Backend API con Swaggerr: http://localhost:4000/api/docs
 
 ## 🔗 Endpoints de la API
 
@@ -74,7 +54,26 @@ npm run setup && npm run dev:all
 
 📖 **Documentación interactiva Swagger:** http://localhost:4000/api/docs
 
-## ��� Estados FHIR
+
+
+## 🧪 Testing
+
+```bash
+# Ejecutar test de conexión a la API
+cd frontend
+node test.js
+```
+
+El script `test.js` verifica:
+- ✅ Conexión al backend
+- ✅ Endpoints de turnos funcionando
+- ✅ Endpoints de pacientes funcionando
+- ✅ Respuestas correctas de la API
+
+---
+
+
+##  Estados FHIR
 
 | Estado | Código | Transición |
 |--------|--------|------------|
@@ -85,7 +84,7 @@ npm run setup && npm run dev:all
 | Completado | \`fulfilled\` | [Final] |
 | Cancelado | \`cancelled\` | [Final] |
 
-## ���️ Tecnologías
+## ️ Tecnologías
 
 **Frontend:** Next.js 14, React 18, TypeScript, Tailwind CSS  
 **Backend:** NestJS, TypeORM, PostgreSQL, Swagger  
@@ -115,11 +114,10 @@ DATABASE_NAME=turnos_db
 - ✅ Detalles expandibles al hacer clic en cada turno
 - ✅ Timer en tiempo real para consultas en curso
 - ✅ Cancelación de turnos con modal de confirmación
-- ✅ Sobreturnos permitidos con indicador visual
 - ✅ Estados FHIR con validación de transiciones
 
 ### 👥 Gestión de Pacientes
-- ✅ Registro completo con validación CUIT/CUIL argentina
+- ✅ Registro completo con validaciones
 - ✅ Búsqueda avanzada por nombre, apellido o documento
 - ✅ Perfil de paciente con historial completo de turnos
 - ✅ Edición de datos con validaciones en tiempo real
@@ -158,7 +156,7 @@ DATABASE_NAME=turnos_db
 - ✅ Índices en campos de búsqueda frecuente
 - ✅ Timestamps automáticos (createdAt, updatedAt)
 
-## ��� Estándar FHIR HL7
+##  Estándar FHIR HL7
 
 Implementa [FHIR R4](https://hl7.org/fhir/R4/):
 - Recurso [Appointment](https://hl7.org/fhir/R4/appointment.html)
@@ -175,21 +173,5 @@ docker-compose logs -f            # Ver logs
 docker-compose build --no-cache   # Rebuild
 docker-compose down               # Detener
 ```
-
-## 🧪 Testing
-
-```bash
-# Ejecutar test de conexión a la API
-cd frontend
-node test.js
-```
-
-El script `test.js` verifica:
-- ✅ Conexión al backend
-- ✅ Endpoints de turnos funcionando
-- ✅ Endpoints de pacientes funcionando
-- ✅ Respuestas correctas de la API
-
----
 
 **Challenge Técnico Zentricx** · Noviembre 2025
