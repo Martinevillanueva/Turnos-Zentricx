@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+  }
+  
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  /* Estilos para la agenda de calendario */
+  .calendar-time-slot {
+    @apply border-b border-gray-100;
+    height: 30px;
+  }
+  
+  .calendar-appointment {
+    @apply absolute border-l-4 p-2 rounded cursor-pointer transition-all hover:shadow-md text-left;
+    min-height: 30px;
+    left: 8px;
+    right: 8px;
+  }
+  
+  .calendar-grid-background {
+    @apply border-b border-gray-100 relative;
+    height: 30px;
+  }
+  
+  /* Mejorar la interacción con slots vacíos */
+  .calendar-grid-background:hover:not(.has-appointment) {
+    @apply bg-blue-50;
+  }
+  
+  .calendar-grid-background.empty-slot {
+    @apply cursor-pointer;
+  }
+  
+  /* Animaciones para sobreturnos */
+  .calendar-appointment.overlapping {
+    @apply shadow-lg;
+    transform: scale(0.95);
+  }
+  
+  .calendar-appointment.overlapping:hover {
+    transform: scale(1);
+    z-index: 20;
+  }
+  
+  /* Indicador de sobreturno */
+  .overbook-indicator {
+    @apply absolute top-1 right-1 bg-orange-500 text-white text-xs px-1 rounded-full;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}

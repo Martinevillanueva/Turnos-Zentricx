@@ -1,0 +1,9 @@
+{
+  "name": "turnos",
+  "version": "1.0.0",
+  "description": "Sistema de Turnos FHIR HL7",
+  "scripts": {
+    "test": "node frontend/test.js",
+    "build": "npm run test && echo '✅ Todos los tests (3) pasaron correctamente. Compilando...'"
+  }
+}
